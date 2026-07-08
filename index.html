@@ -2,69 +2,154 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Priyanka | Digital Marketing Executive</title>
+    <meta name="description" content="Priyanka K. is a digital marketing executive helping brands grow with SEO, social media, content strategy, and AI-powered creative solutions.">
+    <title>Priyanka K. | Digital Marketing Executive</title>
 
     <link rel="stylesheet" href="css/style.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
 <body>
+    <div class="cursor-glow" aria-hidden="true"></div>
+
+    <!--================ BACKGROUND LAYERS START ================-->
+    <div class="background-layer" aria-hidden="true">
+        <div class="bg-grid"></div>
+        <div class="light-rays"></div>
+        <div class="blob blob-one"></div>
+        <div class="blob blob-two"></div>
+        <div class="blob blob-three"></div>
+        <div class="particles-layer"></div>
+    </div>
+    <!--================ BACKGROUND LAYERS END ================-->
 
     <!--================ NAVBAR START ================-->
-
-    <header>
-
+    <header class="site-header">
         <nav class="navbar">
-
-            <div class="logo">
-                 Priyanka <span>K</span>
-            </div>
-
+            <a class="logo" href="#home">Priyanka<span>.</span></a>
             <ul class="nav-links">
-
-                <li><a href="#" class="active">Home</a></li>
-
-                <li><a href="#">About</a></li>
-
-                <li><a href="#">Skills</a></li>
-
-                <li><a href="#">Projects</a></li>
-
-                <li><a href="#">Blog</a></li>
-
-                <li><a href="#">Contact</a></li>
-
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-
-            <div class="menu-btn">
-
-                <i class="fa-solid fa-bars"></i>
-
-            </div>
-
+            <button class="menu-btn" aria-label="Toggle navigation" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
         </nav>
-
     </header>
-
     <!--================ NAVBAR END ================-->
 
-<script src="js/script.js"></script>
+    <!--================ HERO SECTION START ================-->
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content reveal">
+                <p class="eyebrow">Digital Growth • Brand Strategy • Creative Marketing</p>
+                <h1>Hi, I'm <span>Priyanka K.</span></h1>
+                <div class="typing-block">
+                    <span class="typing-prefix">I am a</span>
+                    <span class="typing-text" aria-live="polite"></span>
+                    <span class="typing-cursor">|</span>
+                </div>
+                <p class="hero-copy">
+                    I help businesses grow online through SEO, Social Media Marketing, Content Strategy,
+                    Branding, AI Tools and Creative Digital Solutions.
+                </p>
 
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Hire Me</span>
+                    </a>
+                    <a href="resume.txt" class="btn btn-secondary" download>
+                        <span>Download Resume</span>
+                    </a>
+                </div>
+
+                <div class="social-links" aria-label="Social media links">
+                    <a href="https://www.linkedin.com" target="_blank" rel="noreferrer" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com" target="_blank" rel="noreferrer" class="social-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" rel="noreferrer" class="social-link" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="mailto:priyanka@example.com" class="social-link" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-visual reveal">
+                <div class="profile-card">
+                    <div class="profile-ring"></div>
+                    <div class="profile-inner">
+                        <img src="images/profile.svg" alt="Professional portrait of Priyanka K.">
+                    </div>
+                    <div class="status-badge">
+                        <span class="status-dot"></span>
+                        Available for new projects
+                    </div>
+                </div>
+
+                <div class="floating-icon icon-seo" aria-hidden="true">
+                    <i class="fas fa-bullhorn"></i>
+                </div>
+                <div class="floating-icon icon-analytics" aria-hidden="true">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="floating-icon icon-ai" aria-hidden="true">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="floating-icon icon-marketing" aria-hidden="true">
+                    <i class="fas fa-braille"></i>
+                </div>
+            </div>
+
+            <a href="#about" class="scroll-indicator" aria-label="Scroll to explore more">
+                <span class="mouse">
+                    <span class="wheel"></span>
+                </span>
+            </a>
+        </section>
+        <!--================ HERO SECTION END ================-->
+
+        <!--================ HIGHLIGHTS START ================-->
+        <section class="highlights" id="about">
+            <div class="highlight-card reveal">
+                <h3>Strategy First</h3>
+                <p>Data-backed campaigns, agile experimentation, and polished digital storytelling.</p>
+            </div>
+            <div class="highlight-card reveal">
+                <h3>Performance Driven</h3>
+                <p>SEO, content, and social systems built to increase visibility and conversion.</p>
+            </div>
+            <div class="highlight-card reveal">
+                <h3>AI Enhanced</h3>
+                <p>Creative workflows and automation that elevate velocity without losing authenticity.</p>
+            </div>
+        </section>
+        <!--================ HIGHLIGHTS END ================-->
+
+        <!--================ CTA SECTION START ================-->
+        <section class="cta-section" id="services">
+            <div class="cta-card reveal">
+                <h2>Ready to build something remarkable?</h2>
+                <p>Let’s craft a bold brand presence with premium strategy and standout digital execution.</p>
+                <a href="mailto:priyanka@example.com" class="btn btn-primary" id="contact">
+                    <span>Let’s Connect</span>
+                </a>
+            </div>
+        </section>
+        <!--================ CTA SECTION END ================-->
+    </main>
+
+    <script src="js/script.js"></script>
 </body>
-
 </html>
