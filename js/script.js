@@ -24,15 +24,3 @@ document.querySelectorAll('.nav-link').forEach(link => {
         navMenu.classList.remove('active');
     });
 });
-
-// ===== ACTIVE LINK HIGHLIGHT =====
-const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-
-document.querySelectorAll('.nav-link').forEach(link => {
-    const href = link.getAttribute('href');
-    if (href === currentPage) {
-        link.classList.add('active');
-    } else {
-        link.classList.remove('active');
-    }
-});
