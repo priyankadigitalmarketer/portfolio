@@ -1,0 +1,255 @@
+/*=========================================
+        GOOGLE FONT & RESET
+=========================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    text-decoration:none;
+    list-style:none;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#0f172a;
+    color:#fff;
+}
+
+
+/*=========================================
+            COMMON CONTAINER
+=========================================*/
+
+.container{
+    width:90%;
+    max-width:1300px;
+    margin:auto;
+}
+
+
+/*=========================================
+            HEADER
+=========================================*/
+
+.header{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+
+    z-index:999;
+
+    background:rgba(15,23,42,.75);
+
+    backdrop-filter:blur(18px);
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+
+/*=========================================
+            NAVBAR
+=========================================*/
+
+.header .container{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    height:85px;
+
+}
+
+
+/*=========================================
+            LOGO
+=========================================*/
+
+.logo{
+
+    color:#ffffff;
+
+    font-size:30px;
+
+    font-weight:700;
+
+    letter-spacing:.5px;
+
+}
+
+.logo span{
+
+    color:#7c3aed;
+
+}
+
+
+/*=========================================
+        NAVIGATION LINKS
+=========================================*/
+
+.nav-links{
+
+    display:flex;
+
+    gap:40px;
+
+}
+
+.nav-links li a{
+
+    position:relative;
+
+    color:#d1d5db;
+
+    font-size:16px;
+
+    font-weight:500;
+
+    transition:.35s;
+
+}
+
+
+/* Hover */
+
+.nav-links li a:hover{
+
+    color:#ffffff;
+
+}
+
+
+/* Active */
+
+.nav-links li a.active{
+
+    color:#ffffff;
+
+}
+
+
+/* Animated Underline */
+
+.nav-links li a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-8px;
+
+    width:0;
+
+    height:3px;
+
+    border-radius:20px;
+
+    background:#7c3aed;
+
+    transition:.35s;
+
+}
+
+.nav-links li a:hover::after,
+
+.nav-links li a.active::after{
+
+    width:100%;
+
+}
+
+
+/*=========================================
+            BUTTON
+=========================================*/
+
+.contact-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:14px 28px;
+
+    background:linear-gradient(90deg,#7c3aed,#9333ea);
+
+    color:#fff;
+
+    font-weight:600;
+
+    border-radius:12px;
+
+    transition:.35s;
+
+    box-shadow:0 0 30px rgba(124,58,237,.35);
+
+}
+
+.contact-btn:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 15px 35px rgba(124,58,237,.45);
+
+}
+
+
+/*=========================================
+        MOBILE ICON
+=========================================*/
+
+.menu-toggle{
+
+    display:none;
+
+    color:#fff;
+
+    font-size:26px;
+
+    cursor:pointer;
+
+}
+
+
+/*=========================================
+        RESPONSIVE
+=========================================*/
+
+@media(max-width:991px){
+
+.nav-links{
+
+    display:none;
+
+}
+
+.contact-btn{
+
+    display:none;
+
+}
+
+.menu-toggle{
+
+    display:block;
+
+}
+
+}
