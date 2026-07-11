@@ -1,255 +1,145 @@
-/*=========================================
-        GOOGLE FONT & RESET
-=========================================*/
-
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    text-decoration:none;
-    list-style:none;
-}
-
-html{
-    scroll-behavior:smooth;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
 }
 
 body{
-    font-family:'Poppins',sans-serif;
-    background:#0f172a;
-    color:#fff;
+background:#070B18;
 }
-
-
-/*=========================================
-            COMMON CONTAINER
-=========================================*/
 
 .container{
-    width:90%;
-    max-width:1300px;
-    margin:auto;
+width:90%;
+margin:auto;
 }
 
-
-/*=========================================
-            HEADER
-=========================================*/
-
-.header{
-
-    position:fixed;
-
-    top:0;
-    left:0;
-
-    width:100%;
-
-    z-index:999;
-
-    background:rgba(15,23,42,.75);
-
-    backdrop-filter:blur(18px);
-
-    border-bottom:1px solid rgba(255,255,255,.08);
-
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:#090d1f;
+border-bottom:1px solid rgba(255,255,255,.05);
+z-index:999;
 }
 
+header .container{
 
-/*=========================================
-            NAVBAR
-=========================================*/
+display:flex;
 
-.header .container{
+justify-content:space-between;
 
-    display:flex;
+align-items:center;
 
-    justify-content:space-between;
-
-    align-items:center;
-
-    height:85px;
+padding:22px 0;
 
 }
-
-
-/*=========================================
-            LOGO
-=========================================*/
 
 .logo{
 
-    color:#ffffff;
+display:flex;
 
-    font-size:30px;
+align-items:center;
 
-    font-weight:700;
+gap:10px;
 
-    letter-spacing:.5px;
+font-size:30px;
+
+color:#7b3cff;
+
+font-weight:700;
 
 }
 
 .logo span{
 
-    color:#7c3aed;
+color:white;
+
+font-size:32px;
 
 }
 
+nav ul{
 
-/*=========================================
-        NAVIGATION LINKS
-=========================================*/
+display:flex;
 
-.nav-links{
+list-style:none;
 
-    display:flex;
-
-    gap:40px;
+gap:40px;
 
 }
 
-.nav-links li a{
+nav ul li a{
 
-    position:relative;
+text-decoration:none;
 
-    color:#d1d5db;
+color:white;
 
-    font-size:16px;
+font-size:17px;
 
-    font-weight:500;
+transition:.3s;
 
-    transition:.35s;
-
-}
-
-
-/* Hover */
-
-.nav-links li a:hover{
-
-    color:#ffffff;
+position:relative;
 
 }
 
+nav ul li a:hover,
 
-/* Active */
+nav ul li a.active{
 
-.nav-links li a.active{
-
-    color:#ffffff;
-
-}
-
-
-/* Animated Underline */
-
-.nav-links li a::after{
-
-    content:"";
-
-    position:absolute;
-
-    left:0;
-
-    bottom:-8px;
-
-    width:0;
-
-    height:3px;
-
-    border-radius:20px;
-
-    background:#7c3aed;
-
-    transition:.35s;
+color:#8b5cf6;
 
 }
 
-.nav-links li a:hover::after,
+nav ul li a.active::after{
 
-.nav-links li a.active::after{
+content:'';
 
-    width:100%;
+position:absolute;
 
-}
+bottom:-8px;
 
+left:0;
 
-/*=========================================
-            BUTTON
-=========================================*/
+width:100%;
 
-.contact-btn{
+height:3px;
 
-    display:inline-flex;
+background:#8b5cf6;
 
-    align-items:center;
-
-    gap:10px;
-
-    padding:14px 28px;
-
-    background:linear-gradient(90deg,#7c3aed,#9333ea);
-
-    color:#fff;
-
-    font-weight:600;
-
-    border-radius:12px;
-
-    transition:.35s;
-
-    box-shadow:0 0 30px rgba(124,58,237,.35);
+border-radius:10px;
 
 }
 
-.contact-btn:hover{
+.hire-btn{
 
-    transform:translateY(-4px);
+text-decoration:none;
 
-    box-shadow:0 15px 35px rgba(124,58,237,.45);
+background:#7b3cff;
 
-}
+padding:14px 30px;
 
+border-radius:10px;
 
-/*=========================================
-        MOBILE ICON
-=========================================*/
+color:white;
 
-.menu-toggle{
+font-weight:600;
 
-    display:none;
+display:flex;
 
-    color:#fff;
+align-items:center;
 
-    font-size:26px;
+gap:10px;
 
-    cursor:pointer;
-
-}
-
-
-/*=========================================
-        RESPONSIVE
-=========================================*/
-
-@media(max-width:991px){
-
-.nav-links{
-
-    display:none;
+transition:.3s;
 
 }
 
-.contact-btn{
+.hire-btn:hover{
 
-    display:none;
+background:#9d6bff;
 
-}
-
-.menu-toggle{
-
-    display:block;
-
-}
+transform:translateY(-3px);
 
 }
