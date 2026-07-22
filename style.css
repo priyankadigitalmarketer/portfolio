@@ -364,7 +364,7 @@ h1,h2,h3,h4{font-family:var(--font-display);font-weight:700;letter-spacing:-0.02
    skills.css — SKILLS SECTION (skills.html only)
    ========================================================= */
 
-.skills{padding: 60px 0 100px;background:linear-gradient(180deg, transparent, rgba(124,58,237,0.04), transparent);}
+.skills{padding: 70px 0 100px;background:linear-gradient(180deg, transparent, rgba(124,58,237,0.04), transparent);}
 .skills-grid{
   display:grid;grid-template-columns:repeat(4,1fr);gap:20px;
 }
