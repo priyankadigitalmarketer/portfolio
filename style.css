@@ -342,7 +342,7 @@ h1,h2,h3,h4{font-family:var(--font-display);font-weight:700;letter-spacing:-0.02
    about.css — ABOUT SECTION (about.html only)
    ========================================================= */
 
-.about{padding:170px 0 110px;}
+.about{padding: 110px 0 60px;}
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;}
 .about h2{font-size:clamp(1.7rem,3vw,2.4rem);line-height:1.25;margin-bottom:20px;}
 .stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
@@ -364,7 +364,7 @@ h1,h2,h3,h4{font-family:var(--font-display);font-weight:700;letter-spacing:-0.02
    skills.css — SKILLS SECTION (skills.html only)
    ========================================================= */
 
-.skills{padding:170px 0 110px;background:linear-gradient(180deg, transparent, rgba(124,58,237,0.04), transparent);}
+.skills{padding: 60px 0 100px;background:linear-gradient(180deg, transparent, rgba(124,58,237,0.04), transparent);}
 .skills-grid{
   display:grid;grid-template-columns:repeat(4,1fr);gap:20px;
 }
