@@ -380,6 +380,11 @@ h1,h2,h3,h4{font-family:var(--font-display);font-weight:700;letter-spacing:-0.02
   display:flex;align-items:center;justify-content:center;
   color:#fff;font-family:var(--font-display);font-weight:700;font-size:0.95rem;
 }
+.skill-icon img{
+    width:60px;
+    height:60px;
+    object-fit:contain;
+}
 .skill-card h4{font-size:1rem;margin-bottom:6px;}
 .skill-card p{color:var(--text-faint);font-size:0.8rem;}
 /* =========================================================
