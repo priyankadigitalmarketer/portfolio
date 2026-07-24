@@ -462,6 +462,158 @@ h1,h2,h3,h4{font-family:var(--font-display);font-weight:700;letter-spacing:-0.02
   background:rgba(124,58,237,0.15);color:var(--violet-light);
   display:flex;align-items:center;justify-content:center;
 }
+/*==========================================
+        TOOLS SLIDER
+==========================================*/
+
+.tools-slider{
+
+    max-width:1180px;
+
+    margin:60px auto 0;
+
+    overflow:hidden;
+
+    position:relative;
+
+    padding:20px 0;
+
+}
+
+.tools-track{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:40px;
+
+    width:max-content;
+
+    padding:0 30px;
+
+    animation:toolScroll 35s linear infinite;
+
+}
+
+.tools-slider:hover .tools-track{
+    animation-play-state:paused;
+}
+
+.tool{
+
+    flex-shrink:0;
+    text-align:center;
+    width:120px;
+
+}
+
+.tool-circle{
+
+    width:90px;
+    height:90px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    border:2px solid #8B5CF6;
+
+    background:#0f0b1f;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    color:white;
+
+    font-weight:700;
+
+    font-size:18px;
+
+    transition:.35s;
+
+}
+.tool-circle img{
+    width:44px;
+    height:44px;
+    object-fit:contain;
+}
+
+.tool:hover .tool-circle{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 0 25px rgba(139,92,246,.45);
+
+}
+
+.tool h5{
+
+    margin-top:15px;
+
+    color:#fff;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    line-height:1.4;
+
+}
+
+/* Infinite Animation */
+
+@keyframes toolScroll{
+
+    0%{
+
+        transform:translateX(0);
+
+    }
+
+    100%{
+
+        transform:translateX(-50%);
+
+    }
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.tools-track{
+
+gap:28px;
+
+animation-duration:35s;
+
+}
+
+.tool{
+
+width:95px;
+
+}
+
+.tool-circle{
+
+width:72px;
+height:72px;
+
+font-size:15px;
+
+}
+
+.tool h5{
+
+font-size:13px;
+
+}
+
+}
 /* =========================================================
    responsive.css — MEDIA QUERIES (shared, load last on every page)
    ========================================================= */
@@ -494,4 +646,21 @@ h1,h2,h3,h4{font-family:var(--font-display);font-weight:700;letter-spacing:-0.02
   .stat-grid{grid-template-columns:1fr;}
   .section-inner{padding:0 20px;}
   .footer-bottom{flex-direction:column;text-align:center;}
+}
+.tools-track-reverse{
+    display:flex;
+    align-items:flex-start;
+    gap:40px;
+    width:max-content;
+    padding:0 30px;
+    animation:toolScrollReverse 30s linear infinite;
+}
+
+@keyframes toolScrollReverse{
+    from{
+        transform:translateX(-50%);
+    }
+    to{
+        transform:translateX(0);
+    }
 }
